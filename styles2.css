@@ -1,0 +1,90 @@
+@keyframes moveNose{
+	20%{
+		transform: translate(1px,-3px);
+	}
+	40%{
+		transform: translate(-1px,3px);
+	}
+	60%{
+		transform: translate(1px,-3px);
+	}
+}
+
+@keyframes moveLeftEar{
+	20%{
+		transform: rotate(-10deg);
+	}
+	40%{
+		transform: rotate(-1deg);
+	}
+}
+
+@keyframes moveRightEar{
+	20%{
+		transform: rotate(4deg);
+	}
+	40%{
+		transform: rotate(-4deg);
+	}
+}
+@keyframes moveEye{
+	40%{
+		transform: translate(1px,4px)
+	}
+	80%{
+		transform: translate(-1px,0px)
+	}
+}
+
+
+.smell .nose{
+	animation: moveNose 1s infinite
+}
+
+.smell .eye{
+	animation: moveEye 3s infinite
+}
+
+.smell .leftear{
+	animation: moveLeftEar  infinite
+}
+.smell .rightear{
+	animation: moveRightEar  infinite
+}
+ @keyframes moveTail{
+	20%{
+		transform: rotate(10deg);
+	}
+	40%{
+		transform: rotate(0deg);
+	}
+	60%{
+		transform: rotate(10deg)
+	}
+}
+@keyframes moveHead{
+	30%{
+		transform: rotate(7deg);
+	}
+	60%{
+		transform: rotate(-5deg);
+	}
+}
+
+.happy .tail{
+	animation: moveTail 1s infinite;
+	transform-origin: 45% 63%;
+}
+
+.happy .nose{
+	animation: moveNose 1s infinite 
+}
+
+.happy .cointainer-head{
+	animation: moveHead 2s infinite;
+	transform-origin: 45% 63%;
+}
+
+.cointainer-head{
+	perspective: 3000px;
+}
